@@ -54,10 +54,11 @@ function matchRima(text,search)
     test += search[i];
   }
 
+  test = test.slice(-3);
 
   for (var i = 0; i < words.length - 1; i++) {
 
-    if(words[i].toUpperCase().includes(test.toUpperCase()))
+    if(words[i].slice(2).toUpperCase().includes(test.toUpperCase()))
     {
       selected[j] = words[i];
       selected[j] += ' ';
