@@ -45,7 +45,7 @@ function matchRima(text,search)
   var words = str.split(" ");
   var selected = [];
   var j = 0;
-  //alert(search);
+  //alert(search); //
 
   var test = '';
 
