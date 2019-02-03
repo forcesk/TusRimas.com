@@ -79,5 +79,17 @@ function matchRima(text,search)
 }
 
   //alert(search);
+  selected = removeDups(selected);
+
   return selected;
+}
+
+function removeDups(names) {
+  let unique = {};
+  names.forEach(function(i) {
+    if(!unique[i]) {
+      unique[i] = true;
+    }
+  });
+  return Object.keys(unique);
 }
