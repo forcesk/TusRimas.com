@@ -15,7 +15,7 @@ function showFormElements(oForm) {
 
 function readTextFile(word)
 {
-  file = "quijote.txt"
+  file = "2000-8.txt"
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
