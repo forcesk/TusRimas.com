@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<script src="rim.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+  var word =localStorage.getItem("storageName");
+  readTextFile(word);
+  var allW =localStorage.getItem("quijote2");
+  //var allW = readTextFile(word);
+  //var finalSplitText = allW.split("_");
+  //var splitText = finalSplitText[0];
+  document.getElementById("wordH").innerHTML=allW;
+}
+
+</script>
+
+<html>
+<head>
+  <title>TusRimas.com</title>
+</head>
+<body style="background-color: gray">
+
+  <div class="jumbotron" style="background-image: url('https://m.media-amazon.com/images/G/31/digital/music/merch/India/2018/LandingPages/MarketingLandingPage/MLP_BG_1X.jpg')">
+<h1 id="wordH" href = test.html></h1>
+</div>
+
+
+
+</body>
+</html>
