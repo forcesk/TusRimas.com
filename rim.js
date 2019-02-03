@@ -57,7 +57,7 @@ function matchRima(text,search)
 
   for (var i = 0; i < words.length - 1; i++) {
 
-    if(words[i].includes(test))
+    if(words[i].toUpperCase().includes(test.toUpperCase()))
     {
       selected[j] = words[i];
       selected[j] += ' ';
