@@ -10,12 +10,12 @@ function showFormElements(oForm) {
     }
   }
     localStorage.setItem("storageName",msg);
-    window.location.assign("/results.html");
+    window.location.assign("results.html");
 }
 
 function readTextFile(word)
 {
-  file = "/quijote.txt"
+  file = "quijote.txt"
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
