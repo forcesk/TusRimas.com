@@ -56,11 +56,21 @@ function matchRima(text,search)
 
   test = test.slice(-3);
   var len = 0;
+  var last = 0;
+  var letter = '';
 
   for (var i = 0; i < words.length - 1; i++) {
     len = words[i].length;
 
-    if(words[i].slice(len-3).toUpperCase().includes(test.toUpperCase()))
+    if(len > 3)
+      letter = words[i].slice(len-3).toUpperCase()
+    else {
+      letter = words[i].toUpperCase()
+    }
+
+
+
+    if(letter == test.toUpperCase())
     {
       selected[j] = words[i];
       selected[j] += ' ';
