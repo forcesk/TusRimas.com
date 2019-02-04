@@ -72,7 +72,7 @@ function matchRima(text,search)
 
     if(letter == test.toUpperCase())
     {
-      selected[j] = words[i-1]+" "+words[i];
+      selected[j] = words[i-1].toLowerCase()+" "+words[i].toLowerCase();
       selected[j] += ' ';
       j = j+1;
     }
