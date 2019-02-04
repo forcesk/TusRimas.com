@@ -19,11 +19,13 @@ window.onload = function()
   var word =localStorage.getItem("storageName");
   readTextFile(word);
   var allW =localStorage.getItem("quijote2");
-  //var allW = readTextFile(word);
-  //var finalSplitText = allW.split("_");
-  //var splitText = finalSplitText[0];
-  document.getElementById("wordH").innerHTML=allW;
+
+//  document.getElementById("wordH").innerHTML=allW; antiguos resultados
+
   document.getElementById("wordI").innerHTML=word;
+
+  // Add the contents of json to #foo:
+  document.getElementById('foo').appendChild(makeUL(allW));
 }
 
 </script>
@@ -39,28 +41,26 @@ window.onload = function()
 
   <div class="jumbotron" style="background-image: url('https://m.media-amazon.com/images/G/31/digital/music/merch/India/2018/LandingPages/MarketingLandingPage/MLP_BG_1X.jpg')">
   </br>
-  </br>
+
     <h1 style="color: white">Tus Resultados: </h1>  <h1 style="color: white" id="wordI">" "</h1>
     </br>
     </br>
+
+<!-- antiguos resultados
 <h2  style="color: white" id="wordH" href = test.html></h2>
-</br>
-</br>
-</br>
-</br>
-</br>
+-->
+
+<h2> <div style="color: white" id="foo"> </h2></div>
+
+<div class="col" align="right">
+<a href="index.html" class="btn btn-danger btn-lg" >Regresar</a>
+</div>
+
 
 <hr/>
-<div class="col" align="right">
-<a href="index.html" class="btn btn-outline-danger" >Regresar</a>
-
 
 
 </div>
-
-</div>
-
-
 
 </body>
 </html>
